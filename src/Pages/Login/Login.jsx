@@ -5,7 +5,7 @@ import "./Login.scss";
 
 function Login() {
   const [setToken] = useAuth(false);
-  const [status, setStatus] = useState(0);
+  const [status , setStatus] = useState(0);
   const email = useRef();
   const password = useRef();
   const loginSubmit = (e) => {
@@ -25,6 +25,7 @@ function Login() {
           }),
         });
         // console.log(res.json())
+        setStatus(res.status);
         const data = await res.json();
         setToken(data);
       } catch (error) {

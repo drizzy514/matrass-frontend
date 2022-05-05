@@ -5,7 +5,6 @@ const SearchContext = createContext();
 
 function SearchProvider({ children }) {
   const [data, setData] = useState([]);
-  const [dataBackup, setDataBackup] = useState([]);
   const [param, setParam] = useState("");
   const [seachedItem, setSeachedItem] = useState("");
   const [name, setName] = useState("");
@@ -13,16 +12,12 @@ function SearchProvider({ children }) {
 
   useEffect(() => {
     if (seachedItem.length) {
-      const searchResult = data.filter((e) => e.user_login);
+      const searchResult = data.filter((e) => e.users_login);
       if (searchResult.length) {
         setData(searchResult);
-      } else {
-        setData(dataBackup);
-      }
-    } else {
-      setData(dataBackup);
+      } 
     }
-  }, [dataBackup, name, seachedItem]);
+  }, [data, name, seachedItem]);
 
   useEffect(() => {
     async function getData() {
@@ -31,10 +26,10 @@ function SearchProvider({ children }) {
           headers: {
             token: token,
           },
+            cookies: {token: token}
         });
-        const data = await response.json();
-        setData(await data);
-        setDataBackup(await data);
+        const res = await response.json();
+        setData( res);
       }
     }
 

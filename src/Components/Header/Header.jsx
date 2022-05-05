@@ -28,8 +28,8 @@ function Header({ placeholder, input,  }) {
         <div>
           <img src={profile} alt="profile" />
         </div>
-       {console.log(token)}
-      </div>
+          <h3>Abdulhakim {token.users_login}</h3>
+        </div>
     </header>
   );
 }

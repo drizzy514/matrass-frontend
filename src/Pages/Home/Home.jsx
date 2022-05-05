@@ -17,9 +17,7 @@ import OrderModal from "../../Components/OrderModal/orderModal";
 import VideoModal from "../../Components/VideoModal/VideoModal";
 
 // Images
-import memariform from "../../images/memariform.png";
-import tabiiyLateks from "../../images/tabiiy-lateks.png";
-import mustaqilPrujina from "../../images/mustaqil-prujina.png";
+
 import penatibus from "../../images/Penatibus.png";
 import libero from "../../images/Libero.png";
 import deliver from "../../images/deliver.png";
