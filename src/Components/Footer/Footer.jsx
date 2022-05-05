@@ -40,7 +40,7 @@ function Footer() {
               <a
                 className="footer-above-sm-item__link"
                 href="https://www.facebook.com/abutechuz/"
-                target="_blank"
+             
               >
                 <img
                   className="footer-above-sm-item__link__image"
@@ -53,7 +53,7 @@ function Footer() {
               <a
                 className="footer-above-sm-item__link"
                 href="https://twitter.com/"
-                target="_blank"
+             
               >
                 <img
                   className="footer-above-sm-item__link__image"
@@ -66,7 +66,7 @@ function Footer() {
               <a
                 className="footer-above-sm-item__link"
                 href="https://vimeo.com/"
-                target="_blank"
+             
               >
                 <img
                   className="footer-above-sm-item__link__image"
@@ -79,7 +79,7 @@ function Footer() {
               <a
                 className="footer-above-sm-item__link"
                 href="https://www.youtube.com/"
-                target="_blank"
+             
               >
                 <img
                   className="footer-above-sm-item__link__image"
@@ -99,7 +99,7 @@ function Footer() {
             <Arrow />
           </a>
           <div className="footer-below-logo">
-            <a href="https://www.facebook.com/abutechuz/" target="_blank">
+            <a href="https://www.facebook.com/abutechuz/" >
               <img src={authorLogo} alt="Author's Logo" />
             </a>
           </div>
