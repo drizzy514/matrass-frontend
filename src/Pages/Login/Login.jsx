@@ -5,7 +5,7 @@ import "./Login.scss";
 
 function Login() {
   const [setToken] = useAuth(false);
-  const [status, setStatus] = useState(0);
+  const [status] = useState(0);
   const email = useRef();
   const password = useRef();
   const loginSubmit = (e) => {
